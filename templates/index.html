@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthdesk chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <header>
+      <h1>Health helpdesk</h1>
+    </header>
+    <main>
+      <form action="/results" method="post">
+        <label for="health-condition">Health Condition:</label>
+        <select id="health-condition" name="health-condition">
+            <option value="diabetes">Diabetes</option>
+            <option value="asthma">Asthma</option>
+            <option value="hypertension">Hypertension</option>
+            <option value="migraine">Migraine</option>
+        </select>
+        <br>
+        <label for="severity">Severity of Condition:</label>
+        <select id="severity" name="severity">
+            <option value="mild">Mild</option>
+            <option value="moderate">Moderate</option>
+            <option value="severe">Severe</option>
+            <option value="critical">Critical</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    </main>
+  </body>
+  <footer>
+    <p class="indexfooter">2023 HealthDesk Web App</p>
+  </footer>
+</html>

@@ -2,7 +2,7 @@ import openai
 from flask import Flask, render_template, request
 
 # Set up OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "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"
 
 openai.Model.list()
 # Initialize Flask app

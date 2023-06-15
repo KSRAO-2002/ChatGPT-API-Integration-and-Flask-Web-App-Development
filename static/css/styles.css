@@ -16,7 +16,6 @@ header {
 }
 
 .container {
-  flex: 1;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -29,6 +28,7 @@ footer {
   background-color: #0077cc;
   color: white;
   text-align: center;
+  margin-top: 295px;
 }
 
 /* Index page styles */
@@ -79,3 +79,4 @@ input[type="submit"]:hover {
   line-height: 1.5;
   padding: 20px;
 }
+
